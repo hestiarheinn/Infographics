@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Order in Shopee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-container">
+
+    <svg class="road-path" width="3990" height="1000" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="startArrow" markerWidth="15" markerHeight="15" refX="15" refY="7.5" orient="auto">
+            <path d="M0,0 L15,7.5 L0,15 L3,7.5 z" fill="#e64a19" />
+        </marker>
+        <marker id="endPin" markerWidth="30" markerHeight="30" refX="15" refY="30" orient="auto">
+            <path d="M15,0 C7,0 0,7 0,15 C0,25 15,30 15,30 C15,30 30,25 30,15 C30,7 23,0 15,0 z M15,12 A3,3 0 1,1 15,18 A3,3 0 0,1 15,12 z" fill="#e64a19"/>
+        </marker>
+
+        <path id="theRoadPath" 
+              d="M 350 350 
+                 C 500 350, 600 600, 750 600 
+                 C 900 600, 1000 400, 1150 400 
+                 C 1300 400, 1400 600, 1550 600 
+                 C 1700 600, 1800 400, 2000 400
+                 C 2200 400, 2300 600, 2500 600
+                 C 2700 600, 2800 400, 3000 400
+                 L 3500 400" />
+    </defs>
+
+    <use href="#theRoadPath" 
+         class="layer-slow"
+         marker-start="url(#startArrow)" 
+         marker-end="url(#endPin)" />
+
+    <use href="#theRoadPath" 
+         class="layer-fast" />
+</svg>
+
+    <div class="title">
+        How to<br> order in<br>
+        <span class="highlight">Shopee?</span>
+        <p class="subtitle">Simple steps for online shopping.</p>
+        <p class="subtitle1">By Frezel Jan D. Tejedor</p>
+    </div>
+
+    <div class="step s1">
+        <div class="side-node"></div> <div class="card-visual">
+            <h3 class="step-title">1. Search Item</h3>
+            <p class="step-desc">
+                Every successful purchase begins with knowing what you want. 
+                Use the search bar to find the product.
+            </p>
+        </div>
+        <div class="plus-btn" onclick="openPopup(
+            'Search Item', 'Every successful purchase begins with knowing exactly what you’re looking for. Start by typing the name of the product into the search bar—be as specific as possible to get better results. You can narrow your choices using filters such as price range, location, or rating. This helps you find the best quality items faster while avoiding products that don’t match your expectations. Taking a moment to search properly sets the foundation for a smooth shopping experience.', 
+            '15.jpg', 'modal-content--title-on-top')">+</div>
+    </div>
+    <div class="bottom-card t1"> 
+        <div class="tip-node"></div>
+        <div class="tip-label">💡 Tip Box!</div>
+        <div class="tip-content">
+            Use filters like “Price Range” or “4 stars & up” to quickly find quality items.
+        </div>
+    </div>
+
+    <div class="step s2">
+        <div class="side-node"></div>
+        <div class="card-visual">
+            <h3 class="step-title">2. Select Product</h3>
+            <p class="step-desc">
+                Found what you need? Click on the product to view variations and shipping details.
+            </p>
+        </div>
+        <div class="plus-btn" onclick="openPopup('Select Product', 'Once you’ve found an item that interests you, click on it to view the full details. Here, you can check essential information such as available colors, sizes, styles, and shipping options. Take time to read the product description and scroll through reviews to see feedback and real photos from previous buyers. Reviewing this information carefully helps ensure that the product meets your needs and comes from a trustworthy seller—especially if it’s from a “Preferred” or “Shopee Mall” shop.', 
+        '14.jpg', 'modal-content--side-by-side')">+</div>
+    </div>
+    <div class="bottom-card t2"> 
+        <div class="tip-node"></div>
+        <div class="tip-label">💡 Tip Box!</div>
+        <div class="tip-content">
+            Check if the shop is “Preferred” or “Shopee Mall” for safer and more reliable purchases.
+        </div>
+    </div>
+
+    <div class="step s3">
+        <div class="side-node"></div>
+        <div class="card-visual">
+            <h3 class="step-title">3. Add to Cart</h3>
+            <p class="step-desc">
+                Don't check out just yet! Add it to your cart to apply vouchers later.
+            </p>
+        </div>
+        <div class="plus-btn" onclick="openPopup('Add to Cart', 'Instead of checking out right away, it’s often better to add the item to your cart first. This gives you time to explore more products, compare prices, and prepare vouchers or discount codes you can apply later. Adding items to your cart also helps you catch flash sale prices, as Shopee frequently offers time-limited discounts. When everything is in your cart, you’ll have a clearer overview of your total cost and can make a smarter purchasing decision.', 
+        '13.jpg','modal-content--side-by-side')">+</div>
+    </div>
+    <div class="bottom-card t3">
+        <div class="tip-node"></div>
+        <div class="tip-label">💡 Tip Box!</div>
+        <div class="tip-content">
+            Add items during flash sales to lock in discounted prices before they run out.
+        </div>
+    </div>
+
+    <div class="step s4">
+        <div class="side-node"></div>
+        <div class="card-visual">
+            <h3 class="step-title">4. Checkout</h3>
+            <p class="step-desc">
+                Select your items, apply vouchers, and choose your payment method.
+            </p>
+        </div>
+        <div class="plus-btn" onclick="openPopup('Checkout', 'When you’re ready to buy, open your cart and select the items you want to check out. Review each product to ensure the variation, quantity, and shipping options are correct. Before confirming, apply any vouchers, free shipping, or Shopee coins to reduce your total cost. You’ll also need to choose your payment method—whether it’s Cash on Delivery, ShopeePay, GCash, Maya, or a credit/debit card. Double-checking your details helps avoid failed deliveries or unnecessary expenses.', 
+        '12.jpg', 'modal-content--side-by-side')">+</div>
+    </div>
+    <div class="bottom-card t4">
+        <div class="tip-node"></div>
+        <div class="tip-label">💡 Tip Box!</div>
+        <div class="tip-content">
+           Try using Shopee vouchers and coins together—you can save more than you think!
+        </div>
+    </div>
+
+    <div class="step s5">
+        <div class="side-node"></div>
+        <div class="card-visual">
+            <h3 class="step-title">5. Place Order</h3>
+            <p class="step-desc">
+                Confirm your payment details and wait for delivery!
+            </p>
+        </div>
+        <div class="plus-btn" onclick="openPopup('Place Order', 'After verifying your information, tap the “Place Order” button to finalize your purchase. Shopee will process your order and notify the seller to prepare your item for shipping. You can track its progress in the “To Ship” or “To Receive” sections of your Shopee account. While waiting, keep your phone accessible so the courier can contact you when your package is nearby. Once delivered, inspect your item and confirm receipt to complete the transaction.', 
+        '11.jpg', 'modal-content--title-on-top')">+</div>
+    </div>
+    <div class="bottom-card t5">
+        <div class="tip-node"></div>
+        <div class="tip-label">💡 Tip Box!</div>
+        <div class="tip-content">
+            After placing your order, turn on “Order Notifications” so you won’t miss updates.
+        </div>
+    </div>
+
+</div> 
+<div id="popup-overlay" class="modal-overlay">
+    <div class="modal-content">
+        <img id="popup-img" src="11.jpg" alt="" class="modal-img">
+        
+        <div class="text-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title">Step Title</h3>
+            <p id="popup-desc">Description goes here.</p>
+        </div>
+        </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
